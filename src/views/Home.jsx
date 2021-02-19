@@ -1,7 +1,7 @@
 import React from 'react'
 import Carrusel from '../components/Carrusel'
 import Descripcion from '../components/Descripcion'
-import IconoHome from '../components/IconoHome'
+import IconoCirculo from '../components/IconoCirculo'
 import ImgServicios from '../components/ImgServicios'
 import PiePagina from '../components/PiePagina'
 import SubtituloH2 from '../components/SubtituloH2'
@@ -31,7 +31,7 @@ const img1 = {
   backgroundPosition:"center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  height: "600px"
+  height: "auto"
 }
 
 
@@ -43,6 +43,15 @@ const borde = {
   marginLeft: "100px",
   marginTop: "45px",
   marginBottom: "50px"
+}
+
+const bordeIcono = {
+  borderRadius: "100px",
+  border: "solid white 8px",
+  heigth: "170px",
+  width: "170px",
+
+  padding: "40px"
 }
 
 const Home = () => {
@@ -108,26 +117,106 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" " style={img1}>
+      <div className="z-depth-5  " style={img1}>
         
-        <div className="container">
+        <div className="container  ">
        
-          <div className="row">
-            <div className="col-lg-3">
-              <p>asdasdasdasd</p>
+          <div className="row ">
+          <SubtituloH2 subtituloH2="Titulo" estiloSubtitulo="text-center h1 text-white mt-5"/>
+            <div className="col-lg-3 col-md-6 mt-5 mb-5 border border-white  " > 
+              <IconoCirculo awesomeIconoCirculo="far fa-calendar-alt fa-5x text-white   " />
+              <SubtituloH2 subtituloH2="subtitulo" estiloSubtitulo="text-center h2 text-white mt-3"/>
+              <Descripcion 
+                estiloDescripcion="text-center text-white"
+                descripcion="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime " 
+              />
             </div>
-            <div className="col-lg-3">
-
+            
+            <div className="col-lg-3 col-md-6 mt-5 mb-5 border border-white ">
+              <IconoCirculo awesomeIconoCirculo="far fa-calendar-alt fa-5x text-white  " />
+              <SubtituloH2 subtituloH2="subtitulo" estiloSubtitulo="text-center h2 text-white mt-3"/>
+              <Descripcion 
+                estiloDescripcion="text-center text-white"
+                descripcion="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime " 
+              />
             </div>
-            <div className="col-lg-3">
-
+            <div className="col-lg-3 col-md-6 mt-5 mb-5 border border-white ">
+              <IconoCirculo awesomeIconoCirculo="far fa-calendar-alt fa-5x  text-white " />
+              <SubtituloH2 subtituloH2="subtitulo" estiloSubtitulo="text-center h2 text-white mt-3"/>
+              <Descripcion 
+                estiloDescripcion="text-center text-white"
+                descripcion="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime " 
+              />
             </div>
-            <div className="col-lg-3">
-
+            <div className="col-lg-3 col-md-6 mt-5 mb-5 border border-warning ">
+              <IconoCirculo awesomeIconoCirculo="far fa-calendar-alt fa-5x  text-white " />
+              <SubtituloH2 subtituloH2="subtitulo" estiloSubtitulo="text-center h2 text-white mt-3"/>
+              <Descripcion
+                estiloDescripcion="text-center text-white"
+                descripcion="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime " 
+              />
             </div>
           </div>
         </div>
+        
       </div>
+      <div className="container mt-3">
+        <div className="row">
+          <SubtituloH2 subtituloH2="Galeria" estiloSubtitulo="text-center h1 mt-5"/>
+          <ImgServicios 
+            estImgServicios="col-lg-4 mt-5" 
+            srcImgServicios="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" 
+          />
+          <ImgServicios 
+            estImgServicios="col-lg-4 mt-5" 
+            srcImgServicios="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" 
+          />
+          <ImgServicios 
+            estImgServicios="col-lg-4 mt-5" 
+            srcImgServicios="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" 
+          />
+          <ImgServicios 
+            estImgServicios="col-lg-4 mt-5" 
+            srcImgServicios="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" 
+          />
+          <ImgServicios 
+            estImgServicios="col-lg-4 mt-5" 
+            srcImgServicios="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" 
+          />
+          <ImgServicios 
+            estImgServicios="col-lg-4 mt-5" 
+            srcImgServicios="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" 
+          />
+        </div>
+      </div>
+      
+          <div className="row">
+            <div className="col-lg-6 z-depth-5 " style={img1}>
+              <SubtituloH2 subtituloH2="Galeria" estiloSubtitulo="text-center h1 font-weight-bold text-white mt-5"/> 
+              <Descripcion
+                estiloDescripcion="text-center text-white  font-italic h5 mb-5"
+                descripcion="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime" 
+              /> 
+            </div>
+            <div className="col-lg-6 z-depth-5 " style={img1}>
+              <SubtituloH2 subtituloH2="Galeria" estiloSubtitulo="text-center h1 font-weight-bold text-white mt-5"/> 
+              <Descripcion
+                estiloDescripcion="text-center text-white font-italic h5 mb-5 "
+                descripcion="Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Inventore, deserunt incidunt accusantium assumenda, asperiores recusandae maxime " 
+              />      
+                
+            </div>
+          </div>
       <PiePagina/>
     </div>
   )
