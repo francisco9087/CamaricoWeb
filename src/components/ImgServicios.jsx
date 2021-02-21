@@ -1,6 +1,12 @@
 import React from 'react'
 import Descripcion from './Descripcion'
 import SubtituloH2 from './SubtituloH2'
+import Slide from 'react-reveal/Slide';
+
+
+
+
+
 
 const estiloImg3 = {
   height:"420px",
@@ -9,12 +15,20 @@ const estiloImg3 = {
 }
 
 const ImgServicios = (props) => {
+ 
   return (
-    <div className={props.estImgServicios}>
-      <img className="img img-fluid" src={props.srcImgServicios} style={estiloImg3}/> 
-      <SubtituloH2 subtituloH2={props.subImgServ}/>
-      <Descripcion descripcion={props.descImgServ}/>     
+   
+  <div className={props.estImgServicios}  >
+      <Slide bottom>
+        <img className="img img-fluid card" src={props.srcImgServicios} style={estiloImg3}/> 
+        </Slide>
+        <SubtituloH2 subtituloH2={props.subImgServ} estiloSubtitulo="h4 text-center mt-4" />
+        <Descripcion descripcion={props.descImgServ}/> 
+     
+    
     </div>
+  
+  
   )
 }
 
